@@ -1,9 +1,10 @@
-package login;
+package org.project.controller;
 
 import java.io.IOException;
 
-import common.RestUtil;
-import homeScreen.HomeScreen;
+import org.project.common.RestUtil;
+import org.project.screens.HomeScreen;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -23,19 +24,8 @@ public class LoginScreenController {
 
 	public void loginButtonClick() throws IOException, InterruptedException {
 
-//		String query = "Select * from login where username = '" + username.getText() + "'and password = '"
-//				+ password.getText() + "';";
-//
-//		ResultSet result = DatabaseUtil.resultQuery(query);
-
 		String request = "{\r\n" + "    \"loginName\": \"" + username.getText() + "\",\r\n" + "    \"password\": \""
 				+ password.getText() + "\"\r\n" + "}";
-//		String request = "{\r\n"
-//				+ "    \"loginName\": \"shree\",\r\n"
-//				+ "    \"password\": \"Shree@123\"\r\n"
-//				+ "}";
-//		String request = "\"loginName\": "+"\""+username.getText()+"\""
-//				+ "		\"password\":"+"\""+password.getText()+"\"";
 
 		String url = "http://localhost:8080/auth/login";
 

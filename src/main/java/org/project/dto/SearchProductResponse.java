@@ -1,4 +1,4 @@
-package org.dnyanyog.dto;
+package org.project.dto;
 
 public class SearchProductResponse {
 	private String product_id;

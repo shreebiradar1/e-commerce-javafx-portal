@@ -1,15 +1,10 @@
-package homeScreen;
+package org.project.controller;
 
 import java.io.IOException;
 
+import org.project.screens.ProductScreen;
+import org.project.screens.UserScreen;
 
-import common.StageFactory;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import product.ProductScreen;
-import user.UserScreen;
 
 public class HomeScreenController {
 //	There are two button present in HomeScreen 

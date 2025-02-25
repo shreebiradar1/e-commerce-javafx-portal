@@ -5,19 +5,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<!--Remember most of get confused which path should you connect with the controller?-->
-<!--As there are multiple button but there screen present inside the ProductScreens class followed by there button (onAction)
-	for every button it will appear a new screen and that screen present inside the ProductScreens class that why it connected with that class -->
-<AnchorPane fx:controller="product.ProductMainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="org.project.controller.product.ProductMainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="45.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to product Managment">
          <font>
             <Font name="Bodoni MT" size="24.0" />
          </font>
       </Text>
-      <!--For every button onAction is mandatory
-      	  As the name tell after the clicked of the button it will show the add product screen
-      	  For that visit the ProductScreens class-->
+
       <Button layoutX="102.0" layoutY="90.0" mnemonicParsing="false" onAction="#addProductClick" prefHeight="26.0" prefWidth="216.0" style="-fx-background-color: A294F9;" text="Add Product">
          <font>
             <Font size="16.0" />

@@ -1,10 +1,11 @@
-package product;
+package org.project.controller.product;
 
 import java.io.IOException;
 
-import org.dnyanyog.dto.SearchProductResponse;
+import org.project.common.RestUtil;
+import org.project.dto.SearchProductResponse;
+import org.project.screens.ProductScreen;
 
-import common.RestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -34,7 +35,7 @@ public class SearchProductController {
 
 	public void searchEnter() throws IOException, InterruptedException {
 
-		String url = "http://localhost:8080/product/product/"+searchProduct.getText();
+		String url = "http://localhost:8080/product/product/" + searchProduct.getText();
 
 		SearchProductResponse response = RestUtil.searchGetRequest(url, SearchProductResponse.class);
 

@@ -1,9 +1,10 @@
-package product;
+package org.project.controller.product;
 
 import java.io.IOException;
 
+import org.project.common.StageFactory;
+import org.project.screens.ProductScreen;
 
-import common.StageFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -33,16 +34,7 @@ public class DisplayProductController {
 	@FXML
 	private void initialize() {
 		ObservableList<Product> product = FXCollections.observableArrayList();
-		
-		
-//		String query = "select * from product";
-		
-////		ResultSet result = DatabaseUtil.resultQuery(query);
-//		
-//		while(result.next()) {
-//			product.add(new Product(result.getString(1), result.getInt(2), result.getInt(3)));
-//		}
-		
+
 		colName.setCellValueFactory(new PropertyValueFactory<>("name"));
 		colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
 		colQuantity.setCellValueFactory(new PropertyValueFactory<>("quantity"));

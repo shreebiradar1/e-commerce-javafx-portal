@@ -1,6 +1,7 @@
-package login;
+package org.project.screens;
 
-import common.StageFactory;
+import org.project.common.StageFactory;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

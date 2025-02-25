@@ -1,10 +1,11 @@
-package user;
+package org.project.controller.user;
 
 import java.io.IOException;
 
-import org.dnyanyog.dto.SearchUserResponse;
+import org.project.common.RestUtil;
+import org.project.dto.SearchUserResponse;
+import org.project.screens.UserScreen;
 
-import common.RestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;

@@ -1,13 +1,15 @@
-package user;
+package org.project.dto;
 
-public class User {
+public class SearchUserResponse {
 	private String userId;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String mobile;
+	private String code;
+	private String msg;
 
-
+	
 	public String getUserId() {
 		return userId;
 	}
@@ -46,6 +48,22 @@ public class User {
 
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 
 }

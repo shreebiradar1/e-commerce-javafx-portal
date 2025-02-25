@@ -1,7 +1,8 @@
-package user;
+package org.project.controller.user;
 
 import java.io.IOException;
-import java.sql.SQLException;
+
+import org.project.screens.UserScreen;
 
 public class UserMainScreenController {
 	
@@ -13,7 +14,7 @@ public class UserMainScreenController {
 		new UserScreen().searchUserShow();
 	}
 	
-	public void displayUserClick() throws IOException, SQLException {
+	public void displayUserClick() throws IOException {
 		new DisplayScreenController().displayUserShow();
 	}
 	

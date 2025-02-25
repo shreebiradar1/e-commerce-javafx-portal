@@ -1,4 +1,4 @@
-package product;
+package org.project.controller.product;
 
 public class Product {
 	private String name;

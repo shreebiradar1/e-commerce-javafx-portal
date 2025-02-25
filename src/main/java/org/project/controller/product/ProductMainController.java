@@ -1,7 +1,8 @@
-package product;
+package org.project.controller.product;
 
 import java.io.IOException;
-import java.sql.SQLException;
+
+import org.project.screens.ProductScreen;
 
 public class ProductMainController {
 	public void addProductClick() throws IOException {
@@ -12,7 +13,7 @@ public class ProductMainController {
 		new ProductScreen().searchProductShow();
 	}
 	
-	public void displayProductClick() throws IOException, SQLException {
+	public void displayProductClick() throws IOException{
 		new DisplayProductController().displayProductShow();
 	}
 	

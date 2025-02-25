@@ -7,11 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<!--Remember most of get confused which path should you connect with the controller-->
-<!--As the Enter button click it will find addEnter method and the addEnter method
- is present inside the ProductFunction that why we connect with the ProductFunction class-->
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="419.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product.AddProductController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="419.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.controller.product.AddProductController">
    <children>
       <Text layoutX="142.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Product" wrappingWidth="135.2000732421875">
          <font>

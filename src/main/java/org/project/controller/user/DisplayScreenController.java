@@ -1,8 +1,10 @@
-package user;
+package org.project.controller.user;
 
 import java.io.IOException;
 
-import common.StageFactory;
+import org.project.common.StageFactory;
+import org.project.screens.UserScreen;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

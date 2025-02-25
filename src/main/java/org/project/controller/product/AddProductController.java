@@ -1,8 +1,10 @@
-package product;
+package org.project.controller.product;
 
 import java.io.IOException;
 
-import common.RestUtil;
+import org.project.common.RestUtil;
+import org.project.screens.ProductScreen;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;

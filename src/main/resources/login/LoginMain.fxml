@@ -13,10 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<!--Remember most of get confused which path should you connect with the controller?-->
-<!--It is simple to understand that LoginScreenController have the method onAction="#loginButtonClicked" were it implement the functioning of that method 
-	what happen if the loginButtonClicked method invoked for that check the LoginScreenController class-->
-<VBox fx:controller="login.LoginScreenController" prefHeight="370.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+<VBox fx:controller="org.project.controller.LoginScreenController" prefHeight="370.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" >
   <children>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="372.0" prefWidth="640.0" style="-fx-background-color: CDC1FF;">
          <children>
