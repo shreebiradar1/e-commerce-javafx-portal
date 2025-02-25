@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--Remember most of get confused which path should you connect with the controller?-->
+<!--As if you seen productMain.fxml file then you are doubt free-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="420.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product.RemoveProductController">
+   <children>
+      <Text layoutX="125.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Product">
+         <font>
+            <Font name="Bodoni MT" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name : ">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="removeProduct" layoutX="124.0" layoutY="86.0" prefHeight="26.0" prefWidth="217.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="62.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status : ">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="removeStatus" layoutX="123.0" layoutY="139.0" prefHeight="24.0" prefWidth="218.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <!--Just mentioning here don't forget to add onAction-->
+      <Button layoutX="240.0" layoutY="198.0" mnemonicParsing="false" onAction="#removeEnter" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: A294F9;" text="Enter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="109.0" layoutY="198.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: A294F9;" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

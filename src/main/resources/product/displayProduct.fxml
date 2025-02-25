@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:controller="product.DisplayProductController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="productTable" layoutX="40.0" layoutY="92.0" prefHeight="237.0" prefWidth="528.0" style="-fx-background-color: CB9DF0;">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="248.79998779296875" text="Name" />
+          <TableColumn fx:id="colPrice" prefWidth="148.800048828125" text="Price" />
+            <TableColumn fx:id="colQuantity" prefWidth="130.39996337890625" text="Quantity" />
+        </columns>
+      </TableView>
+      <Text layoutX="221.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Product">
+         <font>
+            <Font name="Bodoni MT" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="221.0" layoutY="346.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: A294F9;" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

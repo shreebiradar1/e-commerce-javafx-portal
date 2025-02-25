@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--Remember most of get confused which path should you connect with the controller?-->
+<!--As if you seen productMain.fxml file then you are doubt free-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="420.0" style="-fx-background-color: CDC1FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product.SearchProductController">
+   <children>
+      <Text layoutX="133.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Product">
+         <font>
+            <Font name="Bodoni MT" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchProduct" layoutX="119.0" layoutY="78.0" prefHeight="26.0" prefWidth="252.0" />
+      <Text layoutX="63.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+          <!--Here this label show the status of whether the product found or not for that reason we used label here-->
+      <Label fx:id="searchLabel" layoutX="119.0" layoutY="116.0" prefHeight="26.0" prefWidth="252.0" style="-fx-font-size: 14; -fx-background-color: white;" />
+      <Button layoutX="255.0" layoutY="361.0" mnemonicParsing="false" onAction="#searchEnter" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: A294F9;" text="Enter" />
+      <Button layoutX="34.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: A294F9;" text="Back" />
+      <Text layoutX="79.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="searchName" layoutX="119.0" layoutY="196.0" prefHeight="26.0" prefWidth="252.0" style="-fx-font-size: 14; -fx-background-color: white;" />
+      <Label fx:id="searchPrice" layoutX="119.0" layoutY="236.0" prefHeight="26.0" prefWidth="252.0" style="-fx-font-size: 14; -fx-background-color: white;" />
+      <Label fx:id="searchId" layoutX="119.0" layoutY="160.0" prefHeight="26.0" prefWidth="252.0" style="-fx-font-size: 14; -fx-background-color: white;" />
+      <Label fx:id="searchQuantity" layoutX="119.0" layoutY="270.0" prefHeight="26.0" prefWidth="252.0" style="-fx-font-size: 14; -fx-background-color: white;" />
+      <Label fx:id="searchCategory" layoutX="119.0" layoutY="304.0" prefHeight="26.0" prefWidth="252.0" style="-fx-font-size: 14; -fx-background-color: white;" />
+      <Text layoutX="39.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category :">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
